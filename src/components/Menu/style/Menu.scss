@@ -1,0 +1,93 @@
+@import '../../theme';
+
+.Menu {
+    background-color: getColor(accent1);
+    width: 90%;
+    margin: 30px auto;
+    padding: 10%;
+    display: flex;    
+    flex-flow: column;
+    border-radius: 50px;
+    h1 {
+        transition: 1s ease-in-out;
+        color: getColor(base);
+        font-family: getFont(header);
+        font-size: clamp(0.9rem, calc(2vw + 1rem), 5.2rem);
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        background-color: getColor(default);
+        font-family: getFont(secondary);
+        font-size: clamp(0.9rem, calc(1.5vw + .5rem), 5.2rem);
+        text-align: center;
+        filter: drop-shadow(0 2px 0.25rem rgba(0, 0, 0, 0.336));
+        border-radius: 15px;
+        margin: 5px auto;
+        &:focus{
+            outline: none;
+        }
+    }
+    button {
+        transition: 0.2s ease-in-out;
+        height: 40px;
+        border: none;
+        background-color: getColor(default);
+        text-align: center;
+        margin: 10px 0;
+        border-radius: 25px;
+        font-family: getFont(secondary);
+        font-size: clamp(0.9rem, calc(1vw + .5rem), 5.2rem);
+        color: getColor(base);
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:hover{ 
+            filter: drop-shadow(0 4px 0.5rem rgba(0, 0, 0, 0.281));
+        }
+    }
+
+
+    .userCard {
+        background-color: getColor(default);
+        min-width: 100%;
+        border-radius: 20px;
+        margin: 10px auto;
+        padding: 20px;
+        filter: drop-shadow(0 6px 0.5rem rgba(0, 0, 0, 0.281));
+        h1 , h2{
+            transition: 1s ease-in-out;
+            margin: 0;
+            text-align: start;
+            color: getColor(base);
+            font-weight: bolder;
+            font-size: clamp(0.9rem, calc(1.5vw + .5rem), 5.2rem);
+            font-family: getFont(accent);
+        }
+            button {
+                transition: 0.2s ease-in-out;
+                min-height: 40px;
+                min-width: 100px;
+                border: none;
+                padding: 5px;
+                background-color: getColor(base);
+                text-align: center;
+                margin: 10px 2px;
+                border-radius: 25px;
+                font-family: getFont(header);
+                font-size: clamp(0.9rem, calc(1vw + .5rem), 5.2rem);
+                color: getColor(default);
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+                &:hover{ 
+                    filter: drop-shadow(0 4px 0.5rem rgba(0, 0, 0, 0.281));
+                }
+            }
+    }
+}

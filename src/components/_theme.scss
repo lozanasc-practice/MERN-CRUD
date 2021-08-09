@@ -1,0 +1,23 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Hind+Vadodara:wght@700&family=Montserrat:wght@700&display=swap');
+
+// List
+$fontTheme: (
+    header: 'Montserrat',
+    secondary: 'Hind Vadodara',
+    accent: 'Cairo'
+);
+$colorTheme: (
+    base: #042A2B,
+    accent: #EF7B45,
+    accent1: #CCDBDC,
+    default: #ffffff
+);
+
+// Getter Functions
+@function getColor($color){
+    @return map-get($map: $colorTheme, $key: $color);
+}
+@function getFont($font){
+    @return map-get($map: $fontTheme, $key: $font);
+}
